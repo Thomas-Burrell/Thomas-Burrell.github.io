@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Data Science Portfolio</title>
+  <title>Thomas M Burrell III | Data Science Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -22,22 +22,22 @@
     }
 
     header {
-      text-align: center;
-      margin-bottom: 40px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      text-align: left;
     }
 
-    header img {
-      width: 150px;
-      border-radius: 50%;
+    .top-info {
+      text-align: center;
       margin-bottom: 20px;
     }
 
-    header h1 {
+    .top-info h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
 
-    header p {
+    .top-info p {
       font-size: 1.2em;
       margin-bottom: 10px;
     }
@@ -48,33 +48,59 @@
       color: #3b82f6;
     }
 
+    .profile-container {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+
+    .profile-container img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+
     .project-section {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 40px auto 0 auto;
     }
 
     .project {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
-      overflow: hidden;
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      border: 2px solid #969696;   /* Border to delineate projects */
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 25px;
+      background-color: white;
+      transition: box-shadow 0.3s ease;
     }
 
-    .project img {
+    .project:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .project-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
       width: 100%;
-      max-height: 300px;
-      object-fit: cover;
     }
 
-    .project-content {
-      padding: 20px;
+    .project-image {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 20px;
+      flex-shrink: 0;
     }
 
     .project-content h3 {
-      margin-bottom: 10px;
+      font-size: 1.2em;
+      font-weight: 700;
+      margin: 0;
     }
 
     .project-content p {
@@ -86,36 +112,123 @@
       text-decoration: none;
     }
 
+    .profile-description {
+      margin-left: 20px;
+      max-width: 550px;
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-description p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .section-title {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #111827;
+      border-bottom: 2px solid #0f0f0f;
+      padding-bottom: 10px;
+    }
+
     footer {
       text-align: center;
       margin-top: 50px;
-      color: #6b7280;
+      color: #4c4e52;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="your-picture.jpg" alt="Your Name">
-    <h1>Thomas M Burrell III</h1>
-    <p>Data Scientist | Machine Learning Enthusiast | Problem Solver</p>
-    <div class="links">
-      <a href="your-resume.pdf" target="_blank">Resume</a>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    <div class="top-info">
+      <h1>Thomas M Burrell III (Trey)</h1>
+      <p>Data Scientist at NSWC Dahlgren Division (Department of Defense)</p>
+      <div class="links">
+        <a href="Thomas_Burrell_Resume.pdf" target="_blank">Resume</a>
+        <a href="https://www.linkedin.com/in/thomas-burrell-337019246" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Thomas-Burrell/Data_Projects" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="profile-container">
+      <img src="Headshots.JPG" alt="Thomas Burrell">
+      <div class="profile-description">
+        <p>
+        I'm a Data Scientist with a Master’s in Data Science from the University of Virginia, I’m excel at making sense of messy data and turning it into something useful. My expertise spans machine learning, statistical modeling, and data visualization, with hands-on experience developing scalable solutions. Currently, I work as a Data Scientist at NSWC Dahlgren Naval Base, where I design advanced data visualizations, evaluate AI/ML models, and develop user-friendly interfaces for real-time computer vision testing. I love working in a team environment, and presenting my work when I can. I believe my communication skills and client-facing expertise set me apart from other data scientists. When I'm not coding, I enjoy working out, playing pickleball, or grinding competitive video games (Overwatch, Marvel Rivals, The Finals).
+        </p>
+      </div>
     </div>
   </header>
 
   <section class="project-section">
-    <!-- Example Project Template -->
+    <h2 class="section-title">Projects</h2>
+
     <div class="project">
-      <img src="project-image.jpg" alt="Project Image">
-      <div class="project-content">
-        <h3>Project Title</h3>
-        <p>Short description about what the project is, what you used, and what insights you gained.</p>
-        <a href="https://github.com/yourusername/project-repo" target="_blank">View Code on GitHub</a>
-      </div>
+      <a href="miami-housing.html" class="project-link">
+        <img src="Miami_Housing.png" alt="Miami Housing Image" class="project-image">
+        <div class="project-content">
+          <h3>Predicting Miami Housing Prices using Bayesian Machine Learning</h3>
+        </div>
+      </a>
     </div>
+
+    <div class="project">
+      <a href="streaming.html" class="project-link">
+        <img src="streaming.png" alt="Streaming Image" class="project-image">
+        <div class="project-content">
+          <h3>Analyzing TV Show data using APIs and ETL processes</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="project">
+      <a href="facial-expression.html" class="project-link">
+        <img src="analyze_face.png" alt="Face Expression Image" class="project-image">
+        <div class="project-content">
+          <h3>Analyzing facial expressions using computer vision (Deep Learning)</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="project">
+      <a href="scalable-ray.html" class="project-link">
+        <img src="amazon.png" alt="Amazon Image" class="project-image">
+        <div class="project-content">
+          <h3>Sentiment Analysis on Amazon product reviews using scalable ray (Batch Processing with AWS)</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="project">
+      <a href="twitter-nfl.html" class="project-link">
+        <img src="twitter.png" alt="Twitter Image" class="project-image">
+        <div class="project-content">
+          <h3>Sentiment Analysis on twitter responses about NFL teams (Live streaming data with pyspark)</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="project">
+      <a href="uncertainty.html" class="project-link">
+        <img src="r.png" alt="R Image" class="project-image">
+        <div class="project-content">
+          <h3>Personal developed R package used to perform statistical analysis on various datasets (R studio)</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="project">
+      <a href="esports.html" class="project-link">
+        <img src="esports.png" alt="Esports Image" class="project-image">
+        <div class="project-content">
+          <h3>Are Fighting Games the Ultimate Genre of Esports</h3>
+        </div>
+      </a>
+    </div>
+
     <!-- Duplicate the above block for more projects -->
   </section>
 
