@@ -7,34 +7,73 @@
   <title>Miami Housing Project | Thomas M Burrell III</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
-      color: #111827;
+    }
+
+    body {
+      background-color:#252729;
+      color: #f1f5f9; /* light gray-blue */
       padding: 20px;
       max-width: 900px;
       margin: auto;
+      line-height: 1.6;
     }
+
     h1 {
       margin-bottom: 20px;
       text-align: center;
+      color: #e2e8f0; /* brighter heading */
+      font-size: 2em;
     }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: #60a5fa; /* soft blue */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .image-wrapper {
+      text-align: center;
       margin-bottom: 20px;
     }
-    a {
-      color: #2563eb;
+
+    .large-centered-image {
+      width: 80%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #cbd5e1;
     }
   </style>
 </head>
 <body>
   <h1>Predicting Miami Housing Prices using Bayesian Machine Learning</h1>
-  <img src="Miami_Housing.png" alt="Miami Housing Image">
+
+  <div class="image-wrapper">
+    <img src="Miami_Housing.png" alt="Miami Housing Image" class="large-centered-image">
+  </div>
+
   <p>
     To gain insights into the real estate market, understand trends in property values, and assess affordability given the impact of economic factors like inflation,
-    interest rates, and changing work. I employed Bayesian methods to clearly quantify and describe the uncertainty around predictions for potential homebuyers, 
+    interest rates, and changing work, I employed Bayesian methods to clearly quantify and describe the uncertainty around predictions for potential homebuyers,
     communicating a range of expected sales prices instead of a single estimate.
   </p>
   <p>
@@ -46,5 +85,9 @@
   <p>
     🔙 <a href="index.html">Back to Home</a>
   </p>
+
+  <footer>
+    <p>&copy; 2025 Thomas M Burrell III. All rights reserved.</p>
+  </footer>
 </body>
 </html>

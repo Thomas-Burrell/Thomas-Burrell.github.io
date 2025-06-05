@@ -15,8 +15,8 @@
     }
 
     body {
-      background-color: #f9fafb;
-      color: #111827;
+      background-color: #252729;
+      color: #f1f5f9;
       line-height: 1.6;
       padding: 20px;
     }
@@ -35,17 +35,20 @@
     .top-info h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
+      color: #e2e8f0;
     }
 
     .top-info p {
       font-size: 1.2em;
       margin-bottom: 10px;
+      color: #cbd5e1;
     }
 
     .links a {
       margin: 0 10px;
       text-decoration: none;
-      color: #3b82f6;
+      color: #60a5fa;
+      font-size: 1.5em;
     }
 
     .profile-container {
@@ -58,6 +61,20 @@
       max-width: 300px;
       height: auto;
       border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-description {
+      margin-left: 20px;
+      max-width: 550px;
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-description p {
+      font-size: 1em;
+      line-height: 1.5;
+      color: #e2e8f0;
     }
 
     .project-section {
@@ -65,19 +82,29 @@
       margin: 40px auto 0 auto;
     }
 
+    .section-title {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #f8fafc;
+      border-bottom: 2px solid #94a3b8;
+      padding-bottom: 10px;
+    }
+
     .project {
       display: flex;
       align-items: center;
-      border: 2px solid #969696;   /* Border to delineate projects */
+      border: 2px solid #4b5563;
       border-radius: 10px;
       padding: 15px 20px;
       margin-bottom: 25px;
-      background-color: white;
+      background-color: #4b5563;
       transition: box-shadow 0.3s ease;
     }
 
     .project:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     .project-link {
@@ -99,45 +126,29 @@
 
     .project-content h3 {
       font-size: 1.2em;
-      font-weight: 700;
+      font-weight: 200;
       margin: 0;
+      color: #f1f5f9;
+    }
+
+    .project-content h3 strong {
+      font-weight: 800; /* bold only for parentheses */
     }
 
     .project-content p {
       margin-bottom: 10px;
+      color: #e2e8f0;
     }
 
     .project-content a {
-      color: #2563eb;
+      color: #60a5fa;
       text-decoration: none;
-    }
-
-    .profile-description {
-      margin-left: 20px;
-      max-width: 550px;
-      display: flex;
-      align-items: center;
-    }
-
-    .profile-description p {
-      font-size: 1em;
-      line-height: 1.5;
-    }
-
-    .section-title {
-      font-size: 2em;
-      font-weight: 700;
-      margin-bottom: 30px;
-      text-align: center;
-      color: #111827;
-      border-bottom: 2px solid #0f0f0f;
-      padding-bottom: 10px;
     }
 
     footer {
       text-align: center;
       margin-top: 50px;
-      color: #4c4e52;
+      color: #9ca3af;
     }
   </style>
 </head>
@@ -157,79 +168,78 @@
       <img src="Headshots.JPG" alt="Thomas Burrell">
       <div class="profile-description">
         <p>
-        I'm a Data Scientist with a Master’s in Data Science from the University of Virginia, I’m excel at making sense of messy data and turning it into something useful. My expertise spans machine learning, statistical modeling, and data visualization, with hands-on experience developing scalable solutions. Currently, I work as a Data Scientist at NSWC Dahlgren Naval Base, where I design advanced data visualizations, evaluate AI/ML models, and develop user-friendly interfaces for real-time computer vision testing. I love working in a team environment, and presenting my work when I can. I believe my communication skills and client-facing expertise set me apart from other data scientists. When I'm not coding, I enjoy working out, playing pickleball, or grinding competitive video games (Overwatch, Marvel Rivals, The Finals).
+          I'm a Data Scientist with a Master’s in Data Science from the University of Virginia. I excel at making sense of messy data and turning it into something useful. My expertise spans machine learning, statistical modeling, and data visualization, with hands-on experience developing scalable solutions. Currently, I work at NSWC Dahlgren, where I design advanced visualizations, evaluate AI/ML models, and build user-friendly interfaces for real-time computer vision testing. I love team environments and presenting my work. Outside of work, I enjoy working out, playing pickleball, or grinding competitive video games (Overwatch, Marvel Rivals, The Finals).
         </p>
       </div>
     </div>
   </header>
 
   <section class="project-section">
-    <h2 class="section-title">Projects</h2>
+      <h2 class="section-title">Data Science Projects</h2>
 
     <div class="project">
-      <a href="miami-housing.html" class="project-link">
-        <img src="Miami_Housing.png" alt="Miami Housing Image" class="project-image">
-        <div class="project-content">
-          <h3>Predicting Miami Housing Prices using Bayesian Machine Learning</h3>
-        </div>
-      </a>
-    </div>
+    <a href="miami-housing.html" class="project-link">
+      <img src="Miami_Housing.png" alt="Miami Housing Image" class="project-image">
+      <div class="project-content">
+        <h3><strong>(Bayesian Machine Learning)</strong> Predicting Miami Housing Prices</h3>
+      </div>
+    </a>
+  </div>
 
-    <div class="project">
-      <a href="streaming.html" class="project-link">
-        <img src="streaming.png" alt="Streaming Image" class="project-image">
-        <div class="project-content">
-          <h3>Analyzing TV Show data using APIs and ETL processes</h3>
-        </div>
-      </a>
-    </div>
+  <div class="project">
+    <a href="streaming.html" class="project-link">
+      <img src="streaming.png" alt="Streaming Image" class="project-image">
+      <div class="project-content">
+        <h3><strong>(API and ETL Processes)</strong> Analyzing TV Show data using APIs and ETL processes</h3>
+      </div>
+    </a>
+  </div>
 
-    <div class="project">
-      <a href="facial-expression.html" class="project-link">
-        <img src="analyze_face.png" alt="Face Expression Image" class="project-image">
-        <div class="project-content">
-          <h3>Analyzing facial expressions using computer vision (Deep Learning)</h3>
-        </div>
-      </a>
-    </div>
+  <div class="project">
+    <a href="facial-expression.html" class="project-link">
+      <img src="analyze_face.png" alt="Face Expression Image" class="project-image">
+      <div class="project-content">
+        <h3><strong>(Deep Learning)</strong> Analyzing facial expressions using computer vision</h3>
+      </div>
+    </a>
+  </div>
 
-    <div class="project">
-      <a href="scalable-ray.html" class="project-link">
-        <img src="amazon.png" alt="Amazon Image" class="project-image">
-        <div class="project-content">
-          <h3>Sentiment Analysis on Amazon product reviews using scalable ray (Batch Processing with AWS)</h3>
-        </div>
-      </a>
-    </div>
+  <div class="project">
+    <a href="scalable-ray.html" class="project-link">
+      <img src="amazon.png" alt="Amazon Image" class="project-image">
+      <div class="project-content">
+        <h3><strong>(Batch Processing with AWS)</strong> Sentiment Analysis on Amazon product reviews using scalable ray</h3>
+      </div>
+    </a>
+  </div>
 
-    <div class="project">
-      <a href="twitter-nfl.html" class="project-link">
-        <img src="twitter.png" alt="Twitter Image" class="project-image">
-        <div class="project-content">
-          <h3>Sentiment Analysis on twitter responses about NFL teams (Live streaming data with pyspark)</h3>
-        </div>
-      </a>
-    </div>
+  <div class="project">
+    <a href="twitter-nfl.html" class="project-link">
+      <img src="twitter.png" alt="Twitter Image" class="project-image">
+      <div class="project-content">
+        <h3><strong>(Live streaming data with pyspark)</strong> Sentiment Analysis on twitter responses about NFL teams</h3>
+      </div>
+    </a>
+  </div>
 
-    <div class="project">
-      <a href="uncertainty.html" class="project-link">
-        <img src="r.png" alt="R Image" class="project-image">
-        <div class="project-content">
-          <h3>Personal developed R package used to perform statistical analysis on various datasets (R studio)</h3>
-        </div>
-      </a>
-    </div>
+  <div class="project">
+    <a href="uncertainty.html" class="project-link">
+      <img src="r.png" alt="R Image" class="project-image">
+      <div class="project-content">
+        <h3><strong>(Custom R package built)</strong> R package for statistical analysis across datasets</h3>
+      </div>
+    </a>
+  </div>
 
-    <div class="project">
-      <a href="esports.html" class="project-link">
-        <img src="esports.png" alt="Esports Image" class="project-image">
-        <div class="project-content">
-          <h3>Are Fighting Games the Ultimate Genre of Esports</h3>
-        </div>
-      </a>
-    </div>
+  <div class="project">
+    <a href="esports.html" class="project-link">
+      <img src="esports.png" alt="Esports Image" class="project-image">
+      <div class="project-content">
+        <h3><strong>(Data Analysis and Data Visualization)</strong> Are Fighting Games the Ultimate Genre of Esports?</h3>
+      </div>
+    </a>
+  </div>
 
-    <!-- Duplicate the above block for more projects -->
   </section>
 
   <footer>
