@@ -1,0 +1,115 @@
+<!-- twitter-nfl.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiment Analysis on twitter responses about NFL teams | Thomas M Burrell III</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #252729;
+            color: #f1f5f9;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e2e8f0;
+            font-size: 2em;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .image-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .large-centered-image {
+            width: 30%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Live data streaming using Pyspark; Sentiment Analysis on Tweets about NFL Teams</h1>
+
+    <div class="image-wrapper">
+        <img src="twitter.png" alt="Twitter Image" class="large-centered-image">
+    </div>
+
+    <p>
+        In this project, I used PySpark to stream live Twitter data related to all 32 NFL teams and performed real-time
+        sentiment analysis to assess how fan sentiment correlates with each team's performance. Tweets were processed
+        and scored for positive and negative sentiment, then aggregated and compared against each team's win percentage.
+    </p>
+    <p>
+        The analysis revealed an interesting trend: teams with lower win percentages exhibited more extreme sentiment,
+        both positive and negative. This inverse relationship—illustrated by negative regression lines on sentiment vs.
+        win percentage scatterplots—suggests that struggling teams often generate stronger emotional responses from
+        fans.
+    </p>
+    <p>
+        Surprisingly, the distribution of tweets skewed more positive than expected. Histograms showed a left-skew in
+        positive sentiment (indicating a higher volume of favorable tweets), while negative sentiment distributions were
+        right-skewed, highlighting their relative scarcity. These findings challenge the common assumption that social
+        media is overwhelmingly critical of underperforming teams and offer a more nuanced view of fan engagement in
+        professional sports.
+    </p>
+    <p>
+        My goal was to investigate how machine learning can enhance human-computer interaction across industries like
+        healthcare, security, and customer service.
+        I experimented with different model architectures and techniques to improve performance and generalization.
+    </p>
+    </p>
+
+    <p>
+        📂 <a
+            href="https://github.com/Thomas-Burrell/Data_Projects/tree/main/Python_Projects/sentiment_analysis_live_twitter_project"
+            target="_blank">View Code on GitHub</a>
+    </p>
+    <p>
+        🔙 <a href="index.html">Back to Home</a>
+    </p>
+
+    <footer>
+        <p>&copy; 2025 Thomas M Burrell III. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

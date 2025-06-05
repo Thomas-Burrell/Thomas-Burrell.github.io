@@ -1,68 +1,81 @@
 <!-- scalable-ray.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Scaleable Ray Project | Thomas M Burrell III</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color:#252729;
-      color: #f1f5f9; /* light gray-blue */
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scaleable Ray Project | Thomas M Burrell III</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #252729;
+            color: #f1f5f9;
+            /* light gray-blue */
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
 
-    h1 {
-      margin-bottom: 20px;
-      text-align: center;
-      color: #e2e8f0; /* slightly brighter heading */
-    }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e2e8f0;
+            /* slightly brighter heading */
+        }
 
-    p {
-      line-height: 1.6;
-    }
+        p {
+            line-height: 1.6;
+        }
 
-    a {
-      color: #60a5fa; /* soft blue */
-    }
+        a {
+            color: #60a5fa;
+            /* soft blue */
+        }
 
-    .image-wrapper {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+        .image-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    .large-centered-image {
-      width: 80%;
-      max-width: 700px;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtle image glow */
-    }
-  </style>
+        .large-centered-image {
+            width: 70%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            /* subtle image glow */
+        }
+    </style>
 </head>
-<body>
-  <h1>Sentiment Analysis on Amazon Product Reviews using Scalable Ray (Batch Processing with AWS)</h1>
-  <div class="image-wrapper">
-    <img src="amazon_2.png" alt="Amazon Image" class="large-centered-image">
-  </div>
 
-  <p>
-    To gain insights into the real estate market, understand trends in property values, and assess affordability given the impact of economic factors like inflation,
-    interest rates, and changing work. I employed Bayesian methods to clearly quantify and describe the uncertainty around predictions for potential homebuyers, 
-    communicating a range of expected sales prices instead of a single estimate.
-  </p>
-  <p>
-    This approach helps buyers better prepare for market dynamics and make more informed decisions.
-  </p>
-  <p>
-    📂 <a href="https://github.com/Thomas-Burrell/Data_Projects/tree/main/Python_Projects/scalable_ray_batch_sentiment_analysis_project" target="_blank">View Code on GitHub</a>
-  </p>
-  <p>
-    🔙 <a href="index.html">Back to Home</a>
-  </p>
+<body>
+    <h1>Sentiment Analysis on Amazon Product Reviews using Scalable Ray (Batch Processing with AWS)</h1>
+    <div class="image-wrapper">
+        <img src="amazon_2.png" alt="Amazon Image" class="large-centered-image">
+    </div>
+
+    <p>
+        I used Ray, a scalable Python framework, to perform sentiment analysis on a massive dataset of over 570 million
+        Amazon product reviews. Ray’s task parallelism and actor model allowed us to efficiently batch process text data
+        from categories like All_Beauty, Appliances, and Video_Games, each ranging from 1 to 2.5 GB in size. This
+        approach enabled us to handle the scale and complexity of the data without sacrificing speed or performance.
+    </p>
+    <p>
+        My analysis revealed that the Beauty category had the highest percentage of negative reviews (30.6%),
+        particularly around hair-care products. This suggests a clear opportunity for improvement and innovation,
+        indicating unmet customer needs in that segment. By identifying these trends, businesses can better align their
+        products with consumer expectations.
+    </p>
+    <p>
+        📂 <a
+            href="https://github.com/Thomas-Burrell/Data_Projects/tree/main/Python_Projects/scalable_ray_batch_sentiment_analysis_project"
+            target="_blank">View Code on GitHub</a>
+    </p>
+    <p>
+        🔙 <a href="index.html">Back to Home</a>
+    </p>
 </body>
+
 </html>

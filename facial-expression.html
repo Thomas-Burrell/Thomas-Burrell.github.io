@@ -1,70 +1,114 @@
 <!-- streaming.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Facial Expression Recognition with Deep Learning | Thomas M Burrell III</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
-      color: #111827;
+    }
+
+    body {
+      background-color: #252729;
+      color: #f1f5f9;
       padding: 20px;
       max-width: 900px;
       margin: auto;
-    }
-    .centered-header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .centered-header img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-    a {
-      color: #2563eb;
+      line-height: 1.6;
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 8px;
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #e2e8f0;
+      font-size: 2em;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .image-wrapper {
+      text-align: center;
       margin-bottom: 20px;
     }
-    
+
+    .large-centered-image {
+      width: 80%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #cbd5e1;
+    }
   </style>
 </head>
+
 <body>
-  <div class="centered-header">
-    <h1>Facial Expression Recognition with Deep Learning</h1>
-    <img src="analyze_face.png" alt="Facial Recognition Image">
+  <h1>Facial Expression Recognition with Deep Learning</h1>
+
+  <div class="image-wrapper">
+    <img src="analyze_face.png" alt="Facial Recognition Image" class="large-centered-image">
   </div>
 
   <p>
-     In this project, we explored the power of deep learning to build a facial emotion recognition (FER) system capable of classifying human expressions
-     into seven categories: angry, disgust, fear, happy, neutral, sad, and surprise. Using the Kaggle “Facial Expression Recognition” dataset (~36,000 images),
-     we trained convolutional neural networks (CNNs) to detect emotional cues from grayscale facial images.
+    In this project, we explored the power of deep learning to build a facial emotion recognition (FER) system capable
+    of classifying human expressions
+    into seven categories: angry, disgust, fear, happy, neutral, sad, and surprise. Using the Kaggle “Facial Expression
+    Recognition” dataset (~36,000 images),
+    we trained convolutional neural networks (CNNs) to detect emotional cues from grayscale facial images.
   </p>
   <p>
-    Our goal was to investigate how machine learning can enhance human-computer interaction across industries like healthcare, security, and customer service.
+    Our goal was to investigate how machine learning can enhance human-computer interaction across industries like
+    healthcare, security, and customer service.
     We experimented with different model architectures and techniques to improve performance and generalization.
   </p>
   <p>
-    Key challenges included expression variability across individuals, cultural differences in emotional display, and the ethical implications of FER systems.
-    To improve model reliability, we considered further tuning, better computational resources, and creating our own dataset splits for optimal validation.
+    Key challenges included expression variability across individuals, cultural differences in emotional display, and
+    the ethical implications of FER systems.
+    To improve model reliability, we considered further tuning, better computational resources, and creating our own
+    dataset splits for optimal validation.
   </p>
   <p>
-    Looking ahead, this work could be extended to real-time video processing for mental health applications or intelligent surveillance—always with a 
+    Looking ahead, this work could be extended to real-time video processing for mental health applications or
+    intelligent surveillance—always with a
     strong emphasis on consent and responsible AI use.
   </p>
 
   <p>
-    📂 <a href="https://github.com/Thomas-Burrell/Data_Projects/tree/main/Python_Projects/deep_learning_facial_expression_project" target="_blank">View Code on GitHub</a>
+    📂 <a
+      href="https://github.com/Thomas-Burrell/Data_Projects/tree/main/Python_Projects/deep_learning_facial_expression_project"
+      target="_blank">View Code on GitHub</a>
   </p>
   <p>
     🔙 <a href="index.html">Back to Home</a>
   </p>
+
+  <footer>
+    <p>&copy; 2025 Thomas M Burrell III. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>

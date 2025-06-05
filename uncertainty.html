@@ -1,0 +1,112 @@
+<!-- twitter-nfl.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R Package for Statistical Analysis Across Datasets | Thomas M Burrell III</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #252729;
+            color: #f1f5f9;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e2e8f0;
+            font-size: 2em;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .image-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .large-centered-image {
+            width: 30%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Custom R Package Built to Asses Uncertainty in Datasets (Logistic Regression)</h1>
+
+    <div class="image-wrapper">
+        <img src="r.png" alt="R Image" class="large-centered-image">
+    </div>
+
+    <p>
+        The R package developed here offers a comprehensive suite of tools for evaluating binary classification models,
+        particularly logistic regression models. At its core is the MakePredictions function, which ensures model
+        compatibility, checks input validity, and generates probabilistic predictions alongside observed outcomes.
+        Building on this foundation, the package introduces several analytic functions such as calculate_EPE, set_cost,
+        and calculate_misclassification_cost, which allow users to assess model performance not just through accuracy
+        but also through cost-sensitive metrics that reflect real-world decision impacts. Additionally, it provides key
+        tools to explore classification trade-offs through metrics like TPR, FPR, precision, and optimal thresholding
+        using ROC curve analysis.
+    </p>
+
+
+    <p>
+        Visualization is another strength of the package, with built-in functions like generate_roc and
+        confusion_matrix_metrics_plot to graphically assess model performance. These visualizations, coupled with
+        explanatory output, help users better understand the behavior of their classifiers and make informed decisions
+        about threshold selection and model refinement. The package emphasizes interpretability and flexibility, making
+        it particularly useful for data scientists or analysts working in domains where misclassification costs and
+        prediction reliability are critical.
+    </p>
+
+
+    <p>
+        📂 <a
+            href="https://github.com/Thomas-Burrell/Data_Projects/tree/main/Python_Projects/sentiment_analysis_live_twitter_project"
+            target="_blank">View Code on GitHub</a>
+    </p>
+    <p>
+        🔙 <a href="index.html">Back to Home</a>
+    </p>
+
+    <footer>
+        <p>&copy; 2025 Thomas M Burrell III. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
